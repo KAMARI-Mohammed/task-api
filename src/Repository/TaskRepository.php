@@ -34,13 +34,4 @@ class TaskRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult();
     }
-
-    public function findRecentTasks(int $limit = 10): array
-    {
-        return $this->createQueryBuilder('t')
-            ->orderBy('t.id', 'DESC')
-            ->setMaxResults($limit)
-            ->getQuery()
-            ->getResult();
-    }   
 }

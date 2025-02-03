@@ -41,11 +41,6 @@ class TaskService
         return $this->taskRepository->findByStatus($status);
     }
 
-    public function getRecentTasks(int $limit = 10): array
-    {
-        return $this->taskRepository->findRecentTasks($limit);
-    }
-
     public function updateTask(Task $task, array $data): Task
     {
         $task->setTitle($data['title'] ?? $task->getTitle());
