@@ -1,5 +1,5 @@
 # Comment organiseriez-vous la gestion des permissions utilisateurs dans une
 application de gestion ?
 
-Reponse : Au cours de mon dernier stage chez PeopleSpheres, j'ai utiliser Keycloak pour gérer l'authentification et les autorisations des utilisateurs sur un logiciel SIRH. 
+* Reponse : Au cours de mon dernier stage chez PeopleSpheres, j'ai utiliser Keycloak pour gérer l'authentification et les autorisations des utilisateurs sur un logiciel SIRH. 
 J'ai implémenté une gestion des rôles s'appuyant sur OAuth2, assurant un contrôle d'accès centralisé et sécurisé.
